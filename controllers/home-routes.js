@@ -41,6 +41,15 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+// get communities
+router.get('/communities', (req, res) => {
+  try{
+  res.render('communities')
+} catch (err){
+  res.status(500).json(err)
+}
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
