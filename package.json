@@ -1,21 +1,22 @@
 {
-  "name": "tech-blog",
+  "name": "techtalk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Blog post site for reading and colaborating with other developers",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/module-14-project-mvc.git"
+    "url": "git+https://github.com/CherylHemphill/TechTalks.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "CherylHemphill",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/module-14-project-mvc/issues"
+    "url": "git+https://github.com/CherylHemphill/TechTalks.git/issues"
   },
-  "homepage": "https://github.com/coding-boot-camp/module-14-project-mvc#readme",
+  "homepage": "git+https://github.com/CherylHemphill/TechTalksc#readme",
   "dependencies": {
     "bcrypt": "^4.0.1",
     "connect-session-sequelize": "^6.1.1",
@@ -23,6 +24,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
+    "handlebars": "^4.7.7",
+    "moment": "^2.24.0",
     "mysql2": "^2.0.1",
     "sequelize": "^6.3.5"
   }
