@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
 :root {
-  --primary: #ccdad1;
-  --secondary: #9caea9;
+  --primary: #c5efe4;
+  --secondary: #e0eaeb;
   --tertiary: #788585;
-  --light-dark: #6f6866;
-  --dark: #38302e;
+  --light-dark: #799693;
+  --dark: #4d4c4aea;
   --border-radius: 0.3rem;
 }
 
@@ -12,10 +13,10 @@
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family:"Ysabeau SC", sans-serif;
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
@@ -29,7 +30,7 @@ h5,
 h6 {
   font-weight: 700;
   margin: 0;
-  color: var(--dark);
+  color: var(--primary);
   line-height: 1.25;
 }
 
@@ -52,6 +53,10 @@ main {
 
 a {
   text-decoration: none;
+  color: var(--dark);
+}
+a:hover {
+  color: var(--light-dark);
 }
 
 p {
@@ -126,13 +131,16 @@ input {
 }
 
 .app-title {
+  position: relative;
+  margin-right: 70px;
+  float: right;
   font-size: 3rem;
   background-color: var(--primary);
   color: var(--dark);
   padding: 0 10px;
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: var(--border-radius);
-  box-shadow: 6px 5px var(--light-dark);
+  box-shadow: 4px 4px var(--light-dark);
 }
 
 .app-title a {
@@ -156,7 +164,7 @@ input {
   background-color: var(--dark);
 }
 
-.footer a {
+.new a {
   display: inline-block;
   padding: 1em;
   margin-bottom: .5em;
