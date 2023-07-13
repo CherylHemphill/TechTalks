@@ -10,14 +10,14 @@ router.get('/', async (req, res) => {
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render('all-posts', { posts });
+    res.render('homepage', { posts });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 // get single post
-router.get('/post/:id', async (req, res) => {
+router.get('/single-post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
